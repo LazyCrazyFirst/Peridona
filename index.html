@@ -7,7 +7,7 @@
 
 <body>
 <header class="header">
-    <img src="images/Logo_Peridona.png" class="logo-content" alt="">
+    <img src="images/Logo_Peridona.png" class="logo-content" alt="Logo" width="116" height="27">
     <nav>
         <ul class="nav-list">
             <li class="nav-list__item"><a href="#">HOME</a></li>
@@ -20,11 +20,11 @@
     </nav>
     <div class="contact-info">
         <p class="contact-info__date">Mon - Fri: 10am - 5pm</p>
-        <p class="contact-info__email">info@example.com</p>
-        <p class="contact-info__phone">(875) 4344 73757</p>
+        <a href="mailto:info@example.com" class="contact-info__email">info@example.com</a>
+        <a href="tel:875434473757" class="contact-info__phone">(875) 4344 73757</a>
     </div>
     <div class="header-container">
-        <img class="header-container__image" src="images/About-Building.png" alt="">
+        <img class="header-container__image" src="images/About-Building.png" alt="Main offiсe" width="472" height="758">
         <div class="header-content">
             <h1 class="header__title">We are Providing Be Business Service</h1>
             <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -35,10 +35,10 @@
             <a class="header__link" href="#">Contact us</a>
         </div>
         <div class="sponsors">
-            <img class="sponsors__image" src="images/About-Alisa.png" alt="">
-            <img class="sponsors__image" src="images/About-microwave.png" alt="">
-            <img class="sponsors__image" src="images/About-natural.png" alt="">
-            <img class="sponsors__image" src="images/About-Urban.png" alt="">
+            <img class="sponsors__image" src="images/About-Alisa.png" alt="Logo-Alisa" width="87" height="42">
+            <img class="sponsors__image" src="images/About-microwave.png" alt="Logo-Microwave" width="141" height="22">
+            <img class="sponsors__image" src="images/About-natural.png" alt="Logo-natural" width="106" height="29">
+            <img class="sponsors__image" src="images/About-Urban.png" alt="Logo-Urban" width="96" height="26">
         </div>
     </div>
 </header>
@@ -50,8 +50,7 @@
             <h2>We are Unique & different</h2>
             <h3>About our Business</h3>
             <p>Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                 et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nisi ut aliquip ex
@@ -60,9 +59,9 @@
             </p>
             <table class="about-us-table">
                 <tr>
-                    <td><h2 class="about-us-table__title">23000</h2></td>
-                    <td><h2 class="about-us-table__title">10333</h2></td>
-                    <td><h2 class="about-us-table__title">105</h2></td>
+                    <td><p class="about-us-table__title">23000</p></td>
+                    <td><p class="about-us-table__title">10333</p></td>
+                    <td><p class="about-us-table__title">105</p></td>
                 </tr>
                 <tr>
                     <td><p class="about-us-table__caption">Proects</p></td>
@@ -71,12 +70,16 @@
                 </tr>
             </table>
         </div>
-        <form class="feedback__form">
-            <h2 class="feedback__title">Get in touch</h2>
-            <input type="text" placeholder="enter your name">
-            <input type="text" placeholder="enter your email">
-            <input type="text" placeholder="message">
-            <button class="feedback__button">Send</button>
+        <h2 class="feedback__title">Get in touch</h2>
+        <form action="#" class="feedback-form">
+            <input class="feedback-form__input" type="text" id="name" placeholder="enter your name">
+            <label for="name"></label>
+            <input class="feedback-form__input" type="email" id="email" placeholder="enter your email">
+            <label for="email"></label>
+            <textarea class="feedback-form__input" id="message" name="feedback-form__message" cols="30" rows="10"
+                      placeholder="message"></textarea>
+            <label for="message"></label>
+            <button type="submit" class="feedback__button">Send</button>
         </form>
     </section>
 
@@ -101,7 +104,7 @@
         </div>
 
         <div class="advantages__video">
-            <img class="" src="images/Video-back.png">
+            <img class="" src="images/Video-back.png" alt="video" width="943" height="554">
         </div>
 
     </section>
@@ -117,53 +120,73 @@
         </div>
 
         <div class="services-cards__wrapper">
-            <div class="services-card">
-                <h3 class="services-card__title">Financial Consulting</h3>
-                <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Quis ipsum suspendisse.</p>
-            </div>
-            <div class="services-card">
-                <h3 class="services-card__title">Audit & Assurance</h3>
-                <p class="services-card__caption">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco.</p>
-            </div>
-            <div class="services-card">
-                <h3 class="services-card__title">Business Services</h3>
-                <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Quis ipsum suspendisse.</p>
-            </div>
-            <div class="services-card">
-                <h3 class="services-card__title">Training and Couching</h3>
-                <p class="services-card__caption">Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris.</p>
-            </div>
-            <div class="services-card">
-                <h3 class="services-card__title">Investment Planning </h3>
-                <p class="services-card__caption">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation..</p>
-            </div>
-            <div class="services-card">
-                <h3 class="services-card__title">Marketing Analysis</h3>
-                <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Quis ipsum suspendisse.</p>
-            </div>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Financial Consulting</h3>
+                    <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse.</p>
+                </div>
+            </a>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Audit & Assurance</h3>
+                    <p class="services-card__caption">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim
+                        veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+            </a>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Business Services</h3>
+                    <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse.</p>
+                </div>
+            </a>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Training and Couching</h3>
+                    <p class="services-card__caption">Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris.</p>
+                </div>
+            </a>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Investment Planning </h3>
+                    <p class="services-card__caption">Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad
+                        minim veniam, quis nostrud exercitation..</p>
+                </div>
+            </a>
+            <a href="#" class="services-cards__link">
+                <div class="services-card">
+                    <h3 class="services-card__title">Marketing Analysis</h3>
+                    <p class="services-card__caption">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse.</p>
+                </div>
+            </a>
         </div>
 
     </section>
 
     <section class="providing">
+
+
+
+
+
+
         <table class="providing-table">
             <tr>
-                <td><h2 class="providing-table__amount">1230</h2></td>
-                <td><h2 class="providing-table__amount">961</h2></td>
-                <td><h2 class="providing-table__amount">1322</h2></td>
-                <td><h2 class="providing-table__amount">9650</h2></td>
+                <td><p class="providing-table__amount">1230</p></td>
+                <td><p class="providing-table__amount">961</p></td>
+                <td><p class="providing-table__amount">1322</p></td>
+                <td><p class="providing-table__amount">9650</p></td>
             </tr>
             <tr>
-                <td><h3 class="providing-table__inscription">Project Completed</h3></td>
-                <td><h3 class="providing-table__inscription">Happy Clients</h3></td>
-                <td><h3 class="providing-table__inscription">3\D Modeling</h3></td>
-                <td><h3 class="providing-table__inscription">Cup of Tea</h3></td>
+                <td><p class="providing-table__inscription">Project Completed</p></td>
+                <td><p class="providing-table__inscription">Happy Clients</p></td>
+                <td><p class="providing-table__inscription">3\D Modeling</p></td>
+                <td><p class="providing-table__inscription">Cup of Tea</p></td>
             </tr>
             <tr>
                 <td>
@@ -207,21 +230,21 @@
 
         <div class="team-persons">
             <div class="team-person">
-                <img src="images/person1.png" alt="" class="team-person__image">
+                <img src="images/person1.png" alt="Genetz" class="team-person__image" width="235" height="369">
                 <div class="team-person__decription">
                     <h3 class="team-person__name"> John Grogaries</h3>
                     <p class="team-person__position">Business Professional</p>
                 </div>
             </div>
             <div class="team-person">
-                <img src="images/person2.png" alt="" class="team-person__image">
+                <img src="images/person2.png" alt="Vitya" class="team-person__image" width="235" height="369">
                 <div class="team-person__decription">
                     <h3 class="team-person__name">Adam Herison Pole</h3>
                     <p class="team-person__position">Business Consultent</p>
                 </div>
             </div>
             <div class="team-person">
-                <img src="images/person3.png" alt="" class="team-person__image">
+                <img src="images/person3.png" alt="Nastya" class="team-person__image" width="235" height="369">
                 <div class="team-person__decription">
                     <h3 class="team-person__name">Mani Bomikola</h3>
                     <p class="team-person__position">Resear Analist</p>
@@ -242,21 +265,21 @@
 
         <div class="news-cards">
             <div class="news-card">
-                <img src="images/news-1.jpg" alt="" class="news-card__image">
+                <img src="images/news-1.jpg" alt="News" class="news-card__image" width="370" height="207">
                 <h3 class="news-card__title">Enim ad minim ven magna</h3>
                 <p class="news-card__inscription">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna
                     aliqua. Ut enim ad minim veniam</p>
             </div>
             <div class="news-card">
-                <img src="images/news-2.jpg" alt="" class="news-card__image">
+                <img src="images/news-2.jpg" alt="News" class="news-card__image" width="370" height="207">
                 <h3 class="news-card__title">Lorem ipsum dolor sit amet</h3>
                 <p class="news-card__inscription">Abore et dolore magna aliqua. Ut enim aliquip ex ea commodo consequat.
                     Duis Excepteur sint
                     occaecat cupidatat non proident, sunt in culpa ...</p>
             </div>
             <div class="news-card">
-                <img src="images/news-3.jpg" alt="" class="news-card__image">
+                <img src="images/news-3.jpg" alt="News" class="news-card__image" width="370" height="207">
                 <h3 class="news-card__title">Dolore magna aliqua enim</h3>
                 <p class="news-card__inscription">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna
@@ -283,17 +306,18 @@
         </ul>
 
         <div class="moments_images">
-            <img src="images/happy-1.jpg" alt="" class="moments_image">
-            <img src="images/happy-2.jpg" alt="" class="moments_image">
-            <img src="images/happy-3.jpg" alt="" class="moments_image">
-            <img src="images/happy-4.jpg" alt="" class="moments_image">
-            <img src="images/happy-5.jpg" alt="" class="moments_image">
-            <img src="images/happy-6.jpg" alt="" class="moments_image">
+            <img src="images/happy-1.jpg" alt="Happy-moments-1" class="moments_image" width="470" height="353">
+            <img src="images/happy-2.jpg" alt="Happy-moments-2" class="moments_image" width="270" height="353">
+            <img src="images/happy-3.jpg" alt="Happy-moments-3" class="moments_image" width="370" height="178">
+            <img src="images/happy-4.jpg" alt="Happy-moments-4" class="moments_image" width="370" height="230">
+            <img src="images/happy-5.jpg" alt="Happy-moments-5" class="moments_image" width="370" height="230">
+            <img src="images/happy-6.jpg" alt="Happy-moments-6" class="moments_image" width="370" height="403">
         </div>
     </section>
 
     <section class="location">
-        <img src="images/Yandex-map.png" alt="" class="location__image">
+        <img src="images/Yandex-map.png" alt="sity-Grodno-str-Gorkogo-86" class="location__image" width="1903"
+             height="402">
     </section>
 </main>
 
@@ -305,11 +329,11 @@
                 veniam, reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
             <ul class="footer-contact__list">
-                <li class="footer-contact__item--facebook"></li>
-                <li class="footer-contact__item--twitter"></li>
-                <li class="footer-contact__item--instagram"></li>
-                <li class="footer-contact__item--skype"></li>
-                <li class="footer-contact__item--pinterest"></li>
+                <li class="footer-contact__item--facebook"><a href="#"></a></li>
+                <li class="footer-contact__item--twitter"><a href="#"></a></li>
+                <li class="footer-contact__item--instagram"><a href="#"></a></li>
+                <li class="footer-contact__item--skype"><a href="#"></a></li>
+                <li class="footer-contact__item--pinterest"><a href="#"></a></li>
             </ul>
         </div>
         <div class="footer-resources">
@@ -334,8 +358,11 @@
         <div class="footer-subscription">
             <h3 class="footer-subscription__title">Subscription</h3>
             <p class="footer-subscription__caption">Subcribe us to get latest update</p>
-            <input type="text" class="footer-subscription__email" placeholder="Email">
-            <button class="footer-subscription__button">Subscribe</button>
+            <form action="#" class="following">
+                <input type="email" class="footer-subscription__email" id="subscription__email" placeholder="Email">
+                <label for="subscription__email"></label>
+                <button type="submit" class="footer-subscription__button">Subscribe</button>
+            </form>
         </div>
     </div>
 
